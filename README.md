@@ -90,9 +90,6 @@ do you have any strategies for alleviating the burden? I'd love to use it _every
 dnolen [9:36 AM]
 there's really not much more you can do
 
-valtteri [9:36 AM]
-I’m setting up SPA routing without `/#`.  I’ve configured webserver to always return `index.html`. Basic stuff works but I’m having trouble with nested routes like `www.example.com/foo/bar`.  My build tries to find `/foo/js/compiled/out/goog/base.js` when it actually exists in `/js/compiled/out/goog/base.js`. Same for `deps.js` and `deps_cljs.js`. What knobs I need to turn to make those paths absolute?
-
 thheller [9:36 AM]
 use code splitting .. but no CDN caching cljs.core is not possible
 

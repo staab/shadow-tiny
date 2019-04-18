@@ -1,0 +1,4 @@
+node_modules
+build
+.shadow-cljs
+.nrepl-port
